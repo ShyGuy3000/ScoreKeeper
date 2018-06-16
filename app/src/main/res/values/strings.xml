@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ScoreKeeper</string>
+    <string name="FleetComm">Fleet Commander</string>
+    <string name="EnemyComm">Enemy Commander</string>
+    <string name="Authority">50</string>
+    <string name="plusFive">+5 Authority</string>
+    <string name="plusOne">+1 Authority</string>
+    <string name="minusFive">-5 Authority</string>
+    <string name="minusOne">-1 Authority</string>
+    <string name="reset">Reset</string>
+</resources>

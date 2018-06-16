@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space_under_stars"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="212dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/starrealms_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/playerTitles"
+                    android:text="@string/FleetComm" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/scoreImage"
+                        android:layout_weight="1"
+                        android:src="@drawable/authority_symbol" />
+
+                    <TextView
+                        android:id="@+id/fleet_commander_authority"
+                        style="@style/scoreText"
+                        android:layout_weight="1"
+                        android:text="@string/Authority" />
+
+                </LinearLayout>
+
+                <Button
+                    style="@style/scoreButtons"
+                    android:onClick="plusFiveFleetComm"
+                    android:text="@string/plusFive" />
+
+                <Button
+                    style="@style/scoreButtons"
+                    android:onClick="plusOneFleetComm"
+                    android:text="@string/plusOne" />
+
+                <Button
+                    style="@style/scoreButtons"
+                    android:onClick="minusOneFleetComm"
+                    android:text="@string/minusOne" />
+
+                <Button
+                    style="@style/scoreButtons"
+                    android:onClick="minusFiveFleetComm"
+                    android:text="@string/minusFive" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/playerTitles"
+                    android:text="@string/EnemyComm" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/scoreImage"
+                        android:layout_weight="1"
+                        android:src="@drawable/authority_symbol_red" />
+
+                    <TextView
+                        android:id="@+id/enemy_commander_authority"
+                        style="@style/scoreText"
+                        android:layout_weight="1"
+                        android:text="@string/Authority" />
+
+                </LinearLayout>
+
+                <Button
+                    style="@style/scoreButtons"
+                    android:onClick="plusFiveEnemyComm"
+                    android:text="@string/plusFive" />
+
+                <Button
+                    style="@style/scoreButtons"
+                    android:onClick="plusOneEnemyComm"
+                    android:text="@string/plusOne" />
+
+                <Button
+                    style="@style/scoreButtons"
+                    android:onClick="minusOneEnemyComm"
+                    android:text="@string/minusOne" />
+
+                <Button
+                    style="@style/scoreButtons"
+                    android:onClick="minusFiveEnemyComm"
+                    android:text="@string/minusFive" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="22dp"
+                android:onClick="resetPoints"
+                android:text="@string/reset"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
